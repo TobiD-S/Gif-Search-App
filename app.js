@@ -1,31 +1,3 @@
-/*
-key = kreBe1GKG5DEILVyXdR4fpdfH4SWeFJv
-https://api.giphy.com
-/v1/gifs/search
-q= ryan+goslin
-limit=20
-
-*/
-// var api = "https://api.giphy.com/v1/gifs/search?";
-// var apiKey = "&api_key=kreBe1GKG5DEILVyXdR4fpdfH4SWeFJv";
-// var query = "&q=ryan+gosling";
-
-// function setup() {
-//     noCanvas();
-//     var url = api + apiKey + query;
-//     loadJSON(url, gotData);
-// }
-
-// function gotData(giphy) {
-//     for (var i = 0; i < giphy.data.length; i++) {
-//         createImg(giphy.data[0].images.original.url);
-//     }
-// }
-
-// function draw() {
-
-
-// }
 (function() {
     function giphySearch(keyword) {
         return fetch("https://api.giphy.com/v1/gifs/search?&q=${keyword}&api_key=kreBe1GKG5DEILVyXdR4fpdfH4SWeFJv&limit=20")
@@ -55,6 +27,7 @@ limit=20
     (function listenOnFormSubmit() {
         $('#searchForm').submit((ev) => {
             ev.preventDefault();
+
             let $input = $('#searchInput');
 
             main($input.val());
