@@ -1,5 +1,13 @@
+html {
+    background: #101820ff;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
 body {
     padding: 50px;
+    background: #101820ff;
 }
 
 #thumbs {
@@ -25,7 +33,7 @@ body {
 .inner {
     padding: 5px;
     border-radius: 6px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #eeeeee;
     display: table-cell;
     width: 100%;
     vertical-align: middle;
@@ -46,7 +54,7 @@ body {
     top: 0;
     bottom: 0;
     z-index: 20000;
-    background: rgba(255, 255, 255, 1);
+    background: #fda50f;
 }
 
 .loader-wrapper.shown {
@@ -69,7 +77,7 @@ body {
     height: 51px;
     margin: 6px;
     border-radius: 50%;
-    background: #aaaaaa;
+    background: #101820ff;
     animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 

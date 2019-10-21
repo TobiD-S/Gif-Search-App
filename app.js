@@ -44,12 +44,6 @@
             let img = new Image();
             img.src = gif.images.original.url;
             promises.push(onImgLoad(img));
-            // img.onload = () => {
-            //   loadedImageCount++;
-            //   if (loadedImageCount === result.data.length){
-            //     hideLoader()
-            //   }
-            // };
             appendImage(img);
         });
 
